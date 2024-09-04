@@ -11,4 +11,5 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Listening on port 3000');
   console.log(`Your secret is ${process.env.SECRET_PASSWORD}`)
+  //* this line above should not exist in production
 });
